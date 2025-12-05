@@ -216,14 +216,19 @@ body {
 }
 
 .brand-logo {
-    height: 100px;
     width: auto;
+    max-width: 120px;
+    height: auto;
+    max-height: 100px;
+    object-fit: contain;
     filter: drop-shadow(0 0 20px rgba(255, 255, 255, 0.2));
     transition: all var(--transition-normal);
 }
 
 .mamed-logo {
     filter: drop-shadow(0 0 30px rgba(91, 206, 212, 0.6));
+    max-width: 90px;
+    max-height: 120px;
 }
 
 .neolab-logo {
@@ -950,7 +955,13 @@ section {
     }
 
     .brand-logo {
-        height: 70px;
+        max-width: 70px;
+        max-height: 80px;
+    }
+
+    .mamed-logo {
+        max-width: 60px;
+        max-height: 90px;
     }
 
     .partnership-symbol {
